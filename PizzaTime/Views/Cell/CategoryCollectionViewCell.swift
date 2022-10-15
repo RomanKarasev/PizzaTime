@@ -8,7 +8,13 @@
 import Foundation
 import UIKit
 
+//MARK: - CategoryCollectionViewCell
+
 class CategoryCollectionViewCell: UICollectionViewCell {
+    
+    // MARK: Properties
+    
+    static let identifier = "CategoryCollectionViewCell"
     
     let nameCategoryLabel: UILabel = {
         let label = UILabel()
@@ -18,7 +24,6 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
     
     override var isSelected: Bool {
         didSet {
@@ -31,9 +36,11 @@ class CategoryCollectionViewCell: UICollectionViewCell {
                 backgroundColor = .clear
                 nameCategoryLabel.textColor = Resources.Colors.categoryColor
             }
-            
         }
     }
+    
+    // MARK: Initialization
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -44,8 +51,9 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: Methods
+    
     private func setupViews() {
-        
         layer.cornerRadius = 20
         layer.borderColor = Resources.Colors.categoryColor.cgColor
         backgroundColor = .clear

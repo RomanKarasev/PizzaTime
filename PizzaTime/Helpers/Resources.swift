@@ -9,7 +9,10 @@ import UIKit
 
 enum Resources {
     
+    //MARK: Color
+    
     enum Colors {
+        
         static var active = UIColor(hexString: "#FD3A69")
         static var inactive = UIColor(hexString: "#C3C4C9")
         static var tabBar = UIColor(hexString: "#FFFFFF")
@@ -23,27 +26,34 @@ enum Resources {
         static var categorySelectedBackgroundColor = #colorLiteral(red: 1, green: 0.3348149955, blue: 0.4859694839, alpha: 0.2014847307)
         static var categorySelectedTextColor = UIColor(hexString: "#FD3A69")
     }
-//    UIColor(red: 253, green: 58, blue: 105, alpha: 0.4)
-//    (red: 253, green: 58, blue: 105, alpha: 0.2)
+    
+    //MARK: String
     
     enum Strings {
+        
         enum TabBar {
+            
             static var menu = "Меню"
             static var contacts = "Контакты"
             static var profile = "Профиль"
             static var cart = "Корзина"
         }
+        
         enum Main {
             static var defaultImageName = "default"
         }
     }
+    
+    //MARK: Images
     
     enum Images {
         
         enum Main {
             static var pizza = UIImage(named: "default")
         }
+        
         enum TabBar {
+            
             static var menu = UIImage(named: "menu")
             static var contacts = UIImage(named: "contacts")
             static var profile = UIImage(named: "profile")
@@ -55,6 +65,7 @@ enum Resources {
         }
         
         enum Baner {
+            
             static var baner0 = UIImage(named: "baner0")
             static var baner1 = UIImage(named: "baner1")
         }

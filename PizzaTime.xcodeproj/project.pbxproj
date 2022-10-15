@@ -24,7 +24,6 @@
 		74B4232628F8F0BF0074CFFA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4232528F8F0BF0074CFFA /* Model.swift */; };
 		74B4232928F8F1D70074CFFA /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 74B4232828F8F1D70074CFFA /* SDWebImage */; };
 		74B4232B28F8F1D80074CFFA /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 74B4232A28F8F1D80074CFFA /* SDWebImageMapKit */; };
-		74B4232E28F99C560074CFFA /* CategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4232D28F99C560074CFFA /* CategoryCollectionView.swift */; };
 		74B4233128F99E6E0074CFFA /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4233028F99E6E0074CFFA /* CategoryCollectionViewCell.swift */; };
 		74B4233328FAAACE0074CFFA /* BanerCollectioonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4233228FAAACE0074CFFA /* BanerCollectioonView.swift */; };
 		74B4233528FAAD610074CFFA /* BanerColectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4233428FAAD610074CFFA /* BanerColectionViewCell.swift */; };
@@ -48,7 +47,6 @@
 		74B4231F28F8BB930074CFFA /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		74B4232228F8EFEB0074CFFA /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		74B4232528F8F0BF0074CFFA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		74B4232D28F99C560074CFFA /* CategoryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionView.swift; sourceTree = "<group>"; };
 		74B4233028F99E6E0074CFFA /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		74B4233228FAAACE0074CFFA /* BanerCollectioonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanerCollectioonView.swift; sourceTree = "<group>"; };
 		74B4233428FAAD610074CFFA /* BanerColectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanerColectionViewCell.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 			children = (
 				74B4232F28F99E480074CFFA /* Cell */,
 				74B4231C28F8B7E30074CFFA /* MenuView.swift */,
-				74B4232D28F99C560074CFFA /* CategoryCollectionView.swift */,
 				74B4233228FAAACE0074CFFA /* BanerCollectioonView.swift */,
 			);
 			path = Views;
@@ -270,7 +267,6 @@
 				74B4231D28F8B7E30074CFFA /* MenuView.swift in Sources */,
 				74B4232628F8F0BF0074CFFA /* Model.swift in Sources */,
 				74B4231B28F8B1780074CFFA /* ContactsViewController.swift in Sources */,
-				74B4232E28F99C560074CFFA /* CategoryCollectionView.swift in Sources */,
 				74B4231728F8B0E50074CFFA /* ProfileViewController.swift in Sources */,
 				74B422F828F8AB290074CFFA /* AppDelegate.swift in Sources */,
 				74B422FA28F8AB290074CFFA /* SceneDelegate.swift in Sources */,

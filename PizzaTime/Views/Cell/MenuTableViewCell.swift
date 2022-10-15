@@ -12,9 +12,9 @@ import SDWebImage
 
 class MenuTableViewCell: UITableViewCell {
     
-    static let identifier = "MenuTableViewCell"
-    
     //MARK: Properties
+    
+    static let identifier = "MenuTableViewCell"
     
     let menuItemImageView: UIImageView = {
         let imageView = UIImageView()
@@ -50,7 +50,6 @@ class MenuTableViewCell: UITableViewCell {
         return button
     }()
     
-    
     let priceTitle: UILabel = {
         let title = UILabel()
         title.text = "от 350 р"
@@ -73,6 +72,8 @@ class MenuTableViewCell: UITableViewCell {
         fatalError("init(coder: ) has not been implemented")
     }
     
+    // MARK: Metods
+    
     func render(from model: ViewModel) {
         titleLabel.text = model.title
         priceTitle.text = model.priceTitle
@@ -87,11 +88,7 @@ class MenuTableViewCell: UITableViewCell {
             .defaultImageName)!
     }
     
-    
-    
-    // MARK: Metods
-    
-    func setConstraints() {
+    private func setConstraints() {
         self.addSubview(menuItemImageView)
         NSLayoutConstraint.activate([menuItemImageView.topAnchor.constraint(equalTo: self.topAnchor,
                                                                             constant: 16),
@@ -102,31 +99,42 @@ class MenuTableViewCell: UITableViewCell {
         ])
         
         self.addSubview(titleLabel)
-        NSLayoutConstraint.activate([titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 16),
-                                     titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 180),
-                                     titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -24)
-                                    ])
+        NSLayoutConstraint.activate([titleLabel.topAnchor.constraint(equalTo: self.topAnchor,
+                                                                     constant: 16),
+                                     titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor,
+                                                                         constant: 180),
+                                     titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor,
+                                                                          constant: -24)
+        ])
         
         self.addSubview(priceButton)
-        NSLayoutConstraint.activate([priceButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -24),
-                                     priceButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -24),
+        NSLayoutConstraint.activate([priceButton.bottomAnchor.constraint(equalTo: self.bottomAnchor,
+                                                                         constant: -24),
+                                     priceButton.trailingAnchor.constraint(equalTo: self.trailingAnchor,
+                                                                           constant: -24),
                                      priceButton.widthAnchor.constraint(equalToConstant: 87),
                                      priceButton.heightAnchor.constraint(equalToConstant: 32)
-                                    ])
+        ])
         
         priceButton.addSubview(priceTitle)
         NSLayoutConstraint.activate([priceTitle.centerYAnchor.constraint(equalTo: priceButton.centerYAnchor),
                                      priceTitle.centerXAnchor.constraint(equalTo: priceButton.centerXAnchor)
-                                    ])
+        ])
         
         self.addSubview(descriptionText)
-        NSLayoutConstraint.activate([descriptionText.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
-                                     descriptionText.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 180),
-                                     descriptionText.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -24),
-                                     descriptionText.bottomAnchor.constraint(equalTo: priceButton.topAnchor, constant: -8)
-                                    ])
+        NSLayoutConstraint.activate([descriptionText.topAnchor.constraint(equalTo: titleLabel.bottomAnchor,
+                                                                          constant: 8),
+                                     descriptionText.leadingAnchor.constraint(equalTo: self.leadingAnchor,
+                                                                              constant: 180),
+                                     descriptionText.trailingAnchor.constraint(equalTo: self.trailingAnchor,
+                                                                               constant: -24),
+                                     descriptionText.bottomAnchor.constraint(equalTo: priceButton.topAnchor,
+                                                                             constant: -8)
+        ])
     }
 }
+
+//MARK: - ViewModel
 
 extension MenuTableViewCell {
     
@@ -137,8 +145,6 @@ extension MenuTableViewCell {
         let title: String?
         let priceTitle: String?
         let description: String?
-//        let image: UIImage?
-        
         
         // MARK: Initialization
         
@@ -146,10 +152,7 @@ extension MenuTableViewCell {
             self.title = item.name
             self.priceTitle = "от \(String(item.price)) руб"
             self.description = item.dsc
-//            self.image = configureImage(with: item.img)
         }
     }
-    
-    
 }
 

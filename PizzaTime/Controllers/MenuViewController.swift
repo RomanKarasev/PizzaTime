@@ -7,7 +7,11 @@
 
 import UIKit
 
+//MARK: - MenuViewController
+
 class MenuViewController: UIViewController {
+    
+    // MARK: Properties
     
     let menuView = MenuView()
     
@@ -15,8 +19,10 @@ class MenuViewController: UIViewController {
     var elements = [Element]()
     let cell = MenuTableViewCell()
     
-    
     var qviewHeightAncorConstraint: NSLayoutConstraint!
+    
+    // MARK: View life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setDelegate()
@@ -29,12 +35,14 @@ class MenuViewController: UIViewController {
         super.loadView()
         view = menuView
         view.backgroundColor = Resources.Colors.backgroundColor
-        
-        
     }
     
+    // MARK: Methods
+    
     private func selectedItem() {
-        menuView.categoryMenu.selectItem(at: [0,0], animated: true, scrollPosition: [])
+        menuView.categoryMenu.selectItem(at: [0,0],
+                                         animated: true,
+                                         scrollPosition: [])
     }
     
     private func setDelegate() {
@@ -70,6 +78,7 @@ class MenuViewController: UIViewController {
     }
 }
 
+//MARK: - SelectCategoryDelgate
 
 extension MenuViewController: SelectCategory {
     func selectItem(index: IndexPath) {
@@ -82,6 +91,7 @@ extension MenuViewController: SelectCategory {
                     self.menuView.tableView.reloadData()
                 }
             }
+            
         case 1:
             parser.getBurgers {
                 data in
@@ -92,6 +102,24 @@ extension MenuViewController: SelectCategory {
             }
             
         case 2:
+            parser.getSteaks {
+                data in
+                self.elements = data
+                DispatchQueue.main.async {
+                    self.menuView.tableView.reloadData()
+                }
+            }
+            
+        case 3:
+            parser.getChiken {
+                data in
+                self.elements = data
+                DispatchQueue.main.async {
+                    self.menuView.tableView.reloadData()
+                }
+            }
+            
+        case 4:
             parser.getDeserts {
                 data in
                 self.elements = data
@@ -99,7 +127,8 @@ extension MenuViewController: SelectCategory {
                     self.menuView.tableView.reloadData()
                 }
             }
-        case 3:
+            
+        case 5:
             parser.getDrinks {
                 data in
                 self.elements = data
@@ -120,6 +149,8 @@ extension MenuViewController: SelectCategory {
     }
 }
 
+//MARK: - UITableViewDataSource, UITableViewDelegate
+
 extension MenuViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return elements.count
@@ -136,9 +167,9 @@ extension MenuViewController: UITableViewDataSource, UITableViewDelegate {
             constant: 0
         )
         menuView.banerView.addConstraint(qviewHeightAncorConstraint)
-
+        
         menuView.layoutIfNeeded()
-        }
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MenuTableViewCell.identifier, for: indexPath) as! MenuTableViewCell
@@ -151,6 +182,7 @@ extension MenuViewController: UITableViewDataSource, UITableViewDelegate {
         return 180
     }
 }
+
 
 // MARK: - UICollectionViewDataSource
 

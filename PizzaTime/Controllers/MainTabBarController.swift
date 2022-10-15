@@ -11,7 +11,6 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
     
-    
     // MARK: View Life Cycle
     
     override func viewDidLoad() {
@@ -38,11 +37,10 @@ class MainTabBarController: UITabBarController {
         tabBar.unselectedItemTintColor = Resources.Colors.inactive
         tabBar.backgroundColor = Resources.Colors.tabBar
         
-        
         tabBar.layer.shadowColor = Resources.Colors.shadowColor.cgColor
-        tabBar.layer.shadowOffset = CGSize(width: 0, height: -1)
+        tabBar.layer.shadowOffset = CGSize(width: 0,
+                                           height: -1)
         tabBar.layer.shadowRadius = 10
-       
     }
 }
 // MARK: - Private Methods
@@ -60,8 +58,9 @@ extension MainTabBarController {
         navController.tabBarItem = item
         return navController
     }
-        
+    
     // MARK: createMenuVC
+    
     private func createMenuVC() -> UINavigationController {
         let VC = createNavController(vc: MenuViewController(), itemName: Resources.Strings.TabBar.menu)
         VC.tabBarItem.image = Resources.Images.TabBar.menu
@@ -69,6 +68,7 @@ extension MainTabBarController {
     }
     
     // MARK: createContactsVC
+    
     private func createContactsVC() -> UINavigationController {
         let VC = createNavController(vc: ContactsViewController(), itemName: Resources.Strings.TabBar.contacts)
         VC.tabBarItem.image = Resources.Images.TabBar.contacts
@@ -76,6 +76,7 @@ extension MainTabBarController {
     }
     
     // MARK: createProfileVC
+    
     private func createProfileVC() -> UINavigationController {
         let VC = createNavController(vc: ProfileViewController(), itemName: Resources.Strings.TabBar.profile)
         VC.tabBarItem.image = Resources.Images.TabBar.profile
@@ -83,6 +84,7 @@ extension MainTabBarController {
     }
     
     // MARK: createCartVC
+    
     private func createCartVC() -> UINavigationController {
         let VC = createNavController(vc: CartViewController(), itemName: Resources.Strings.TabBar.cart)
         VC.tabBarItem.image = Resources.Images.TabBar.cart
