@@ -9,21 +9,49 @@
 /* Begin PBXBuildFile section */
 		74B422F828F8AB290074CFFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B422F728F8AB290074CFFA /* AppDelegate.swift */; };
 		74B422FA28F8AB290074CFFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B422F928F8AB290074CFFA /* SceneDelegate.swift */; };
-		74B422FC28F8AB290074CFFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B422FB28F8AB290074CFFA /* ViewController.swift */; };
-		74B422FF28F8AB290074CFFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B422FD28F8AB290074CFFA /* Main.storyboard */; };
+		74B422FC28F8AB290074CFFA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B422FB28F8AB290074CFFA /* MainTabBarController.swift */; };
 		74B4230128F8AB2C0074CFFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B4230028F8AB2C0074CFFA /* Assets.xcassets */; };
 		74B4230428F8AB2C0074CFFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B4230228F8AB2C0074CFFA /* LaunchScreen.storyboard */; };
+		74B4230F28F8ADFB0074CFFA /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4230E28F8ADFB0074CFFA /* Resources.swift */; };
+		74B4231228F8AE350074CFFA /* UIColor + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4231128F8AE350074CFFA /* UIColor + Ext.swift */; };
+		74B4231528F8B0950074CFFA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4231428F8B0950074CFFA /* MenuViewController.swift */; };
+		74B4231728F8B0E50074CFFA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4231628F8B0E50074CFFA /* ProfileViewController.swift */; };
+		74B4231928F8B1050074CFFA /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4231828F8B1050074CFFA /* CartViewController.swift */; };
+		74B4231B28F8B1780074CFFA /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4231A28F8B1780074CFFA /* ContactsViewController.swift */; };
+		74B4231D28F8B7E30074CFFA /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4231C28F8B7E30074CFFA /* MenuView.swift */; };
+		74B4232028F8BB930074CFFA /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4231F28F8BB930074CFFA /* MenuTableViewCell.swift */; };
+		74B4232328F8EFEB0074CFFA /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4232228F8EFEB0074CFFA /* Parser.swift */; };
+		74B4232628F8F0BF0074CFFA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4232528F8F0BF0074CFFA /* Model.swift */; };
+		74B4232928F8F1D70074CFFA /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 74B4232828F8F1D70074CFFA /* SDWebImage */; };
+		74B4232B28F8F1D80074CFFA /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 74B4232A28F8F1D80074CFFA /* SDWebImageMapKit */; };
+		74B4232E28F99C560074CFFA /* CategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4232D28F99C560074CFFA /* CategoryCollectionView.swift */; };
+		74B4233128F99E6E0074CFFA /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4233028F99E6E0074CFFA /* CategoryCollectionViewCell.swift */; };
+		74B4233328FAAACE0074CFFA /* BanerCollectioonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4233228FAAACE0074CFFA /* BanerCollectioonView.swift */; };
+		74B4233528FAAD610074CFFA /* BanerColectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4233428FAAD610074CFFA /* BanerColectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		74B422F428F8AB290074CFFA /* PizzaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B422F728F8AB290074CFFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74B422F928F8AB290074CFFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74B422FB28F8AB290074CFFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		74B422FE28F8AB290074CFFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74B422FB28F8AB290074CFFA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		74B4230028F8AB2C0074CFFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74B4230328F8AB2C0074CFFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74B4230528F8AB2C0074CFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74B4230E28F8ADFB0074CFFA /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		74B4231128F8AE350074CFFA /* UIColor + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Ext.swift"; sourceTree = "<group>"; };
+		74B4231428F8B0950074CFFA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		74B4231628F8B0E50074CFFA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		74B4231828F8B1050074CFFA /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		74B4231A28F8B1780074CFFA /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		74B4231C28F8B7E30074CFFA /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		74B4231F28F8BB930074CFFA /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		74B4232228F8EFEB0074CFFA /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		74B4232528F8F0BF0074CFFA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		74B4232D28F99C560074CFFA /* CategoryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionView.swift; sourceTree = "<group>"; };
+		74B4233028F99E6E0074CFFA /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		74B4233228FAAACE0074CFFA /* BanerCollectioonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanerCollectioonView.swift; sourceTree = "<group>"; };
+		74B4233428FAAD610074CFFA /* BanerColectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanerColectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B4232B28F8F1D80074CFFA /* SDWebImageMapKit in Frameworks */,
+				74B4232928F8F1D70074CFFA /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +86,100 @@
 		74B422F628F8AB290074CFFA /* PizzaTime */ = {
 			isa = PBXGroup;
 			children = (
-				74B422F728F8AB290074CFFA /* AppDelegate.swift */,
-				74B422F928F8AB290074CFFA /* SceneDelegate.swift */,
-				74B422FB28F8AB290074CFFA /* ViewController.swift */,
-				74B422FD28F8AB290074CFFA /* Main.storyboard */,
+				74B4232C28F93E810074CFFA /* ViewModel */,
+				74B4232428F8F0AB0074CFFA /* Models */,
+				74B4231E28F8B7ED0074CFFA /* Views */,
+				74B4231328F8B0790074CFFA /* Controllers */,
+				74B4230C28F8ACE60074CFFA /* Application */,
+				74B4230D28F8ADDC0074CFFA /* Helpers */,
+				74B4230B28F8ACD30074CFFA /* Resources */,
+			);
+			path = PizzaTime;
+			sourceTree = "<group>";
+		};
+		74B4230B28F8ACD30074CFFA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				74B4230028F8AB2C0074CFFA /* Assets.xcassets */,
 				74B4230228F8AB2C0074CFFA /* LaunchScreen.storyboard */,
 				74B4230528F8AB2C0074CFFA /* Info.plist */,
 			);
-			path = PizzaTime;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		74B4230C28F8ACE60074CFFA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				74B422F728F8AB290074CFFA /* AppDelegate.swift */,
+				74B422F928F8AB290074CFFA /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		74B4230D28F8ADDC0074CFFA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				74B4231028F8AE1E0074CFFA /* Extentions */,
+				74B4230E28F8ADFB0074CFFA /* Resources.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		74B4231028F8AE1E0074CFFA /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				74B4231128F8AE350074CFFA /* UIColor + Ext.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		74B4231328F8B0790074CFFA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				74B422FB28F8AB290074CFFA /* MainTabBarController.swift */,
+				74B4231428F8B0950074CFFA /* MenuViewController.swift */,
+				74B4231628F8B0E50074CFFA /* ProfileViewController.swift */,
+				74B4231828F8B1050074CFFA /* CartViewController.swift */,
+				74B4231A28F8B1780074CFFA /* ContactsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		74B4231E28F8B7ED0074CFFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74B4232F28F99E480074CFFA /* Cell */,
+				74B4231C28F8B7E30074CFFA /* MenuView.swift */,
+				74B4232D28F99C560074CFFA /* CategoryCollectionView.swift */,
+				74B4233228FAAACE0074CFFA /* BanerCollectioonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		74B4232428F8F0AB0074CFFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74B4232528F8F0BF0074CFFA /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		74B4232C28F93E810074CFFA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				74B4232228F8EFEB0074CFFA /* Parser.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		74B4232F28F99E480074CFFA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				74B4231F28F8BB930074CFFA /* MenuTableViewCell.swift */,
+				74B4233028F99E6E0074CFFA /* CategoryCollectionViewCell.swift */,
+				74B4233428FAAD610074CFFA /* BanerColectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +198,10 @@
 			dependencies = (
 			);
 			name = PizzaTime;
+			packageProductDependencies = (
+				74B4232828F8F1D70074CFFA /* SDWebImage */,
+				74B4232A28F8F1D80074CFFA /* SDWebImageMapKit */,
+			);
 			productName = PizzaTime;
 			productReference = 74B422F428F8AB290074CFFA /* PizzaTime.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +230,9 @@
 				Base,
 			);
 			mainGroup = 74B422EB28F8AB290074CFFA;
+			packageReferences = (
+				74B4232728F8F1D70074CFFA /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 74B422F528F8AB290074CFFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +249,6 @@
 			files = (
 				74B4230428F8AB2C0074CFFA /* LaunchScreen.storyboard in Resources */,
 				74B4230128F8AB2C0074CFFA /* Assets.xcassets in Resources */,
-				74B422FF28F8AB290074CFFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +259,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B422FC28F8AB290074CFFA /* ViewController.swift in Sources */,
+				74B422FC28F8AB290074CFFA /* MainTabBarController.swift in Sources */,
+				74B4233128F99E6E0074CFFA /* CategoryCollectionViewCell.swift in Sources */,
+				74B4231528F8B0950074CFFA /* MenuViewController.swift in Sources */,
+				74B4233328FAAACE0074CFFA /* BanerCollectioonView.swift in Sources */,
+				74B4230F28F8ADFB0074CFFA /* Resources.swift in Sources */,
+				74B4233528FAAD610074CFFA /* BanerColectionViewCell.swift in Sources */,
+				74B4231228F8AE350074CFFA /* UIColor + Ext.swift in Sources */,
+				74B4231928F8B1050074CFFA /* CartViewController.swift in Sources */,
+				74B4231D28F8B7E30074CFFA /* MenuView.swift in Sources */,
+				74B4232628F8F0BF0074CFFA /* Model.swift in Sources */,
+				74B4231B28F8B1780074CFFA /* ContactsViewController.swift in Sources */,
+				74B4232E28F99C560074CFFA /* CategoryCollectionView.swift in Sources */,
+				74B4231728F8B0E50074CFFA /* ProfileViewController.swift in Sources */,
 				74B422F828F8AB290074CFFA /* AppDelegate.swift in Sources */,
 				74B422FA28F8AB290074CFFA /* SceneDelegate.swift in Sources */,
+				74B4232028F8BB930074CFFA /* MenuTableViewCell.swift in Sources */,
+				74B4232328F8EFEB0074CFFA /* Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		74B422FD28F8AB290074CFFA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74B422FE28F8AB290074CFFA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		74B4230228F8AB2C0074CFFA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,12 +416,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7S58P9LH7H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PizzaTime/Info.plist;
+				INFOPLIST_FILE = PizzaTime/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +431,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +444,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7S58P9LH7H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PizzaTime/Info.plist;
+				INFOPLIST_FILE = PizzaTime/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +459,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +485,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74B4232728F8F1D70074CFFA /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74B4232828F8F1D70074CFFA /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B4232728F8F1D70074CFFA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		74B4232A28F8F1D80074CFFA /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B4232728F8F1D70074CFFA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74B422EC28F8AB290074CFFA /* Project object */;
 }
